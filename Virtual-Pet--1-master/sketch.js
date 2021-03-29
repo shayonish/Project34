@@ -28,17 +28,17 @@ function setup() {
 
 function draw() {  
   background(46, 139, 87);
+  strokeWeight(10) stroke("green");
+  fill("white"); 
+  textSize(20) text("Note:Press UP_ARROW key to feed Drago milk",50,50) fill("white"); 
+  textSize(20) text("Food Remaining :"+foodS,180,300);
   if(keyWentDown(UP_ARROW)){
     writeStock(foodS);
     dog.addImage(dogImg1);
   }
 
   drawSprites();
-  //add styles here
-  strokeWeight()
-  stroke("red");
-
-  text("Food Remaining:" + foodS, 250,480);
+  
 }
 
 function readStock(data){
